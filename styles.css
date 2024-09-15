@@ -1,0 +1,98 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.hero-section {
+  background-color: #6c757d;
+  color: white;
+}
+
+.testimonial {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-light:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.barra {
+  background-color: #1aa3c8 !important;
+  color: white !important;
+  filter: brightness(1.1);
+}
+.degradado {
+  background: linear-gradient(90deg, #453e8f, #e38942, #1aa3c8, #6ec29d);
+  filter: brightness(1.4);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+}
+body {
+  /* width: 100%;
+  height: 200px; */
+  background-color: rgba(110, 194, 157, 0.1);
+  /* También puedes agregar un borde o sombra si lo deseas */
+  /* border: 1px solid #e38942; */
+}
+
+.mensaje-pago {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.mensaje-pago h1 {
+  color: #4caf50;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.mensaje-pago p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.mensaje-pago .icono {
+  font-size: 50px;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.mensaje-pago .boton {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.mensaje-pago .boton:hover {
+  background-color: #45a049;
+}
+
+#payment-message {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin: 0;
+}
