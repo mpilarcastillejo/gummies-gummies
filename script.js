@@ -7,6 +7,7 @@ document.getElementById('payment-form').addEventListener('submit', function (eve
     document.getElementById('confirmation').classList.remove('hidden');
 });
 
+const cantidadInput = document.getElementById('cantidad');
 const form = document.getElementById('payment-form');
 const tarjetaInput = document.getElementById('tarjeta');
 const fechaExpiracionInput = document.getElementById('fecha-expiracion');
@@ -48,11 +49,17 @@ function validarCVV(cvv) {
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
+    const cantidad = cantidadInput.value;
     const tarjeta = tarjetaInput.value;
     const fechaExpiracion = fechaExpiracionInput.value;
     const cvv = cvvInput.value;
     let esValido = true;
-
+    if (!validarCVV(cantidad)) {
+        cantidadInput.classList.add('is-invalid');
+        esValido = false;
+    } else {
+        cantidadInput.classList.remove('is-invalid');
+    }
     // Validación de tarjeta
     if (!validarTarjeta(tarjeta)) {
         tarjetaInput.classList.add('is-invalid');
@@ -93,4 +100,10 @@ tarjetaInput.addEventListener('input', function () {
     let tarjeta = tarjetaInput.value.replace(/\s+/g, '').replace(/[^0-9]/g, '');
     tarjeta = tarjeta.match(/.{1,4}/g)?.join(' ') || tarjeta;
     tarjetaInput.value = tarjeta;
+});
+
+cantidadInput.addEventListener('input', function () {
+    let cantidad = cantidadInput.value.replace(/\s+/g, '').replace(/[^0-9]/g, '');
+    cantidad = cantidad.match(/.{1,4}/g)?.join(' ') || cantidad;
+    cantidadInput.value = cantidad;
 });
