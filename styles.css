@@ -1,14 +1,10 @@
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 h1,
 h2,
 h3,
 h5,
 strong,
 label {
-  font-family: "Lobster", cursive;
+  font-family: "Lobster", normal;
   color: #505050 !important;
   font-weight: bold;
 }
@@ -17,11 +13,8 @@ p {
   font-family: "Quicksand", sans-serif;
   color: #403f3f !important;
 }
-body {
-  font-family: "Arial", sans-serif;
-}
 * {
-  font-family: "Lobster", cursive;
+  font-family: "Lobster", normal;
 }
 /* @font-face {
   font-family: "Blueberry";
