@@ -1,7 +1,32 @@
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
+/* h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  font-family: "Arial", sans-serif;
+} */
+* {
+  font-family: cursive;
+}
+/* @font-face {
+  font-family: "Blueberry";
+  src: url("fonts/blueberry.woff2") format("woff2"), url("fonts/blueberry.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* body {
+  font-family: "Blueberry", sans-serif;
+} */
 .navbar-brand {
   font-weight: bold;
 }
@@ -28,13 +53,14 @@ body {
   background-color: #0056b3;
 }
 .barra {
-  background-color: #1aa3c8 !important;
+  background-color: #e3e3e3 !important;
   color: white !important;
   filter: brightness(1.1);
 }
 .degradado {
-  background: linear-gradient(90deg, #453e8f, #e38942, #1aa3c8, #6ec29d);
-  filter: brightness(1.4);
+  /* background: linear-gradient(90deg, #453e8f, #e38942, #e38942, #453e8f); */
+  background: #1c1c1c;
+  /* filter: brightness(1.1); */
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
 }
 body {
@@ -95,4 +121,45 @@ body {
   align-items: center;
   /* height: 100vh; */
   margin: 0;
+}
+
+.logo {
+  max-height: 250px; /* Ajusta la altura del logo según sea necesario */
+  margin-right: 20px; /* Espaciado entre el logo y el texto */
+}
+.content {
+  text-align: center;
+}
+.imagen-pequena {
+  max-height: 200px; /* Ajusta la altura de la imagen pequeña según sea necesario */
+}
+
+.degradado {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 300px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Espaciado interno */
+}
+.logo {
+  max-height: 150px; /* Ajusta la altura del logo según sea necesario */
+  margin: 0 20px; /* Espaciado entre el logo y la imagen pequeña */
+}
+.imagen-pequena {
+  max-height: 150px; /* Ajusta la altura de la imagen pequeña según sea necesario */
+}
+/* Asegúrate de que el contenedor sea flexible y se ajuste en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .logo {
+    max-height: 100px; /* Ajusta la altura del logo en pantallas pequeñas */
+    margin: 0 10px; /* Reduce el margen en pantallas pequeñas */
+  }
+  .imagen-pequena {
+    max-height: 150px;
+    padding: 5px;
+    /* Ajusta la altura de la imagen pequeña en pantallas pequeñas */
+  }
 }
