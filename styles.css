@@ -168,6 +168,12 @@ body {
   margin: auto;
 }
 
-#productos .card-body p {
+#ingredientes .card-body p {
   margin: 0;
+}
+.btn-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
