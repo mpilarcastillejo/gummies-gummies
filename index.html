@@ -191,7 +191,7 @@
         <div class="row">
           <div class="col-md-4 mt-5">
             <div class="card py-1">
-              <img src="./sangrecita.png" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+              <img src="./ayda-corta-limon.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
               <div class="card-body">
                 <h5 class="card-title">PRIMERO</h5>
                 <p class="card-text">Procedemos a lavar y a cortar los 4 productos esenciales que son Sangre de pollo, platáno mango y limón.</p>
@@ -200,7 +200,7 @@
           </div>
           <div class="col-md-4 mt-5">
             <div class="card py-1">
-              <img src="./plantano.webp" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+              <img src="./amy-sangre-olla.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
               <div class="card-body">
                 <h5 class="card-title">SEGUNDO</h5>
                 <p class="card-text">Cocinaremos la sangre de pollo en una olla a fuego lento, por unos 5 minutos .</p>
@@ -209,7 +209,7 @@
           </div>
           <div class="col-md-4 mt-5">
             <div class="card py-1">
-              <img src="./mango.jpg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+              <img src="./alice-licuadora.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
               <div class="card-body">
                 <h5 class="card-title">TERCERO</h5>
                 <p class="card-text">Licuaremos la sangrecita de pollo con el plátano el mango y unas 5 gotitas de jugo de limón.</p>
@@ -218,7 +218,7 @@
           </div>
           <div class="col-md-4 mt-5">
             <div class="card py-1">
-              <img src="./limon.png" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+              <img src="./esaid-colapiz.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
               <div class="card-body">
                 <h5 class="card-title">CUARTO</h5>
                 <p class="card-text">Disolvemos el colapiz en una taza de agua caliente.</p>
@@ -227,10 +227,46 @@
           </div>
           <div class="col-md-4 mt-5">
             <div class="card py-1">
-              <img src="./colapiz.png" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+              <img src="./isabel-licuadora.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
               <div class="card-body">
                 <h5 class="card-title">QUINTO</h5>
                 <p class="card-text">Una vez disuelto el colapiz lo echaremos a la licuadora para que se incorpore con los demás ingredientes .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div class="card py-1">
+              <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner" style="text-align: center">
+                  <div class="carousel-item active">
+                    <img src="./1-ayda-chocolate.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./2-eimy-chocolate.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./esaid-saca-gomita.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./alice-saca-gomita.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./isabel-saca-gomita.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">SEXTO</h5>
+                <p class="card-text">Para finalizar vertimos el preparado en los moldes de silicona y dejaremos enfrían en la refrigeradora por lo menos 3 o 4 horas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div class="card py-1">
+              <img src="./gomitas-frasco-good.jpeg" class="card-img-top img-ingredientes" alt="Gomitas Multivitamínicas" />
+              <div class="card-body">
+                <h5 class="card-title">SETIMO</h5>
+                <p class="card-text">Listo ya tenemos nuestras ricas gomitas</p>
               </div>
             </div>
           </div>
@@ -275,7 +311,7 @@
         <div class="row justify-content-center">
           <div class="col-md-6 card p-5">
             <!-- Formulario de Pago -->
-            <form id="payment-form ">
+            <form id="payment-form">
               <div class="row text-center">
                 <div class="col">
                   <h2>COMPRAR</h2>
@@ -284,7 +320,11 @@
               </div>
               <div class="mb-3">
                 <label for="cantidad" class="form-label">Cantidad</label>
-                <input type="text" class="form-control" id="cantidad" placeholder="Introduce cuantas undidades desea" maxlength="3" required />
+                <input type="text" class="form-control" id="cantidad" placeholder="Introduce cuantas undidades desea" maxlength="3" minlength="1" required />
+              </div>
+              <div class="mb-3">
+                <label for="precioTotal" class="form-label">Precio Total</label>
+                <input type="text" class="form-control" id="precioTotal" placeholder="Precio total" maxlength="3" readonly required />
               </div>
               <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre Completo</label>

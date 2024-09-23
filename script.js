@@ -4,9 +4,10 @@ function mostrarFormulario() {
 
 document.getElementById('payment-form').addEventListener('submit', function (event) {
     event.preventDefault();
-    document.getElementById('confirmation').classList.remove('hidden');
+    // document.getElementById('confirmation').classList.remove('hidden');
 });
 
+const precioTotalInput = document.getElementById('precioTotal');
 const cantidadInput = document.getElementById('cantidad');
 const form = document.getElementById('payment-form');
 const tarjetaInput = document.getElementById('tarjeta');
@@ -54,12 +55,12 @@ form.addEventListener('submit', function (event) {
     const fechaExpiracion = fechaExpiracionInput.value;
     const cvv = cvvInput.value;
     let esValido = true;
-    if (!validarCVV(cantidad)) {
-        cantidadInput.classList.add('is-invalid');
-        esValido = false;
-    } else {
-        cantidadInput.classList.remove('is-invalid');
-    }
+    // if (!validarCVV(cantidad)) {
+    //     cantidadInput.classList.add('is-invalid');
+    //     esValido = false;
+    // } else {
+    //     cantidadInput.classList.remove('is-invalid');
+    // }
     // Validación de tarjeta
     if (!validarTarjeta(tarjeta)) {
         tarjetaInput.classList.add('is-invalid');
@@ -102,8 +103,12 @@ tarjetaInput.addEventListener('input', function () {
     tarjetaInput.value = tarjeta;
 });
 
+const precioUnitario = 15;
 cantidadInput.addEventListener('input', function () {
+    console.log(precioUnitario);
     let cantidad = cantidadInput.value.replace(/\s+/g, '').replace(/[^0-9]/g, '');
     cantidad = cantidad.match(/.{1,4}/g)?.join(' ') || cantidad;
     cantidadInput.value = cantidad;
+    const precioTotal = cantidad * precioUnitario;
+    precioTotalInput.value = precioTotal.toFixed(2) + ' Nuevos Soles';
 });
