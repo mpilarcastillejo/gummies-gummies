@@ -162,3 +162,12 @@ body {
     /* Ajusta la altura de la imagen pequeña en pantallas pequeñas */
   }
 }
+
+.img-ingredientes {
+  max-width: 200px;
+  margin: auto;
+}
+
+#productos .card-body p {
+  margin: 0;
+}
