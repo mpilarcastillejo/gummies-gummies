@@ -105,10 +105,24 @@ tarjetaInput.addEventListener('input', function () {
 
 const precioUnitario = 15;
 cantidadInput.addEventListener('input', function () {
-    console.log(precioUnitario);
     let cantidad = cantidadInput.value.replace(/\s+/g, '').replace(/[^0-9]/g, '');
     cantidad = cantidad.match(/.{1,4}/g)?.join(' ') || cantidad;
     cantidadInput.value = cantidad;
     const precioTotal = cantidad * precioUnitario;
     precioTotalInput.value = precioTotal.toFixed(2) + ' Nuevos Soles';
+});
+const botonComprar = document.getElementById('botonComprar');
+
+window.addEventListener('scroll', function () {
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const bodyHeight = document.body.offsetHeight;
+    console.log("scroll");
+
+    // Mostrar el botón si el usuario no ha llegado al final
+    if (scrollTop + windowHeight >= bodyHeight - 400) {
+        botonComprar.classList.add('btn-flotante-oculto');
+    } else {
+        botonComprar.classList.remove('btn-flotante-oculto');
+    }
 });

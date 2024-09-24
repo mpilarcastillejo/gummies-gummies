@@ -177,3 +177,7 @@ body {
   right: 20px;
   z-index: 1000;
 }
+.btn-flotante-oculto {
+  opacity: 0;
+  visibility: hidden;
+}
